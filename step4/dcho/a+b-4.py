@@ -2,10 +2,14 @@
 
 import sys
 
-i = 0
-while i < 5:
-	a, b = map(int, sys.stdin.readline().split())
-	if (a < 0 or a > 10 or b < 0 or b > 10):
+while True:
+	try:
+		a, b = map(int, sys.stdin.readline().split())
+		print(a + b)
+	except:
 		break
-	print(a + b)
-	i += 1
+
+
+		# if (a <= 0 or a >= 10 or b <= 0 or b >= 10):
+
+		# break
