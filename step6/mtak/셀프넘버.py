@@ -10,4 +10,4 @@ def self_num():
     ret = sorted(s1 - s2)
     [print(i) for i in ret]
 
-self_num()
+self_num()ㅁ
