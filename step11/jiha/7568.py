@@ -12,3 +12,4 @@ for i in range(n):
 			cnt+=1
 	ans.append(cnt)
 print(*ans, sep=' ')
+### Brute Force는 닉값합니다
