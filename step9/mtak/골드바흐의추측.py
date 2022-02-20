@@ -23,3 +23,4 @@ while _cases:
                 _min_candidate.append(_i - 2*i)
     a = _candidate[_min_candidate.index(min(_min_candidate))]
     print(a, _i - a)
+    
