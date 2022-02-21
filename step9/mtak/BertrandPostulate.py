@@ -16,4 +16,3 @@ while _input != 0:
         if isPrimary(i):
             cnt += 1
     print(cnt)
-
