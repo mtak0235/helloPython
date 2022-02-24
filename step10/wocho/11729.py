@@ -4,12 +4,7 @@ def recur(height, origin, dest):
 	if height == 1:
 		move.append(str(origin) + " " + str(dest))
 		return
-	if 1 != origin and 1 != dest:
-		rest = 1
-	elif 2 != origin and 2 != dest:
-		rest = 2
-	else:
-		rest = 3
+	rest = 6 - origin - dest
 	recur(height - 1, origin, rest)
 	move.append(str(origin) + " " + str(dest))
 	recur(height - 1, rest, dest)
@@ -17,5 +12,5 @@ def recur(height, origin, dest):
 move = []
 recur(N, 1, 3)
 
-print(len(move))
+print(2 ** N - 1)
 print('\n'.join(move))
