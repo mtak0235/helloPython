@@ -5,15 +5,10 @@ import sys
 t: int = int(sys.stdin.readline())
 ans: list = []
 for i in range(t):
-	num: int = 0
 	k = int(sys.stdin.readline())
 	n = int(sys.stdin.readline())
-	if n == 1:
-		num += 1
-	else:
-		for j in range(k + 1):
-			for k in range(1, n + 1):
-	ans.append(num)
-
-for i in ans:
-	print(i)
+	key: list = [x for x in range(1, n+1)]
+	for j in range(k + 1):
+		for k in range(1, n):
+			key[k] += key[k-1]
+	print(key[-1])
