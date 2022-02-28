@@ -3,8 +3,15 @@
 #포함 안된 경우에는 -1을 출력
 
 s = input() #단어 입력
-abc = list() #알파벳 리스트
+abc = "abcdefghijklmnopqrstuvwxyz" #알파벳 
 
 for i in abc :
-    print()
+    print(s.find(i)) #find로 해단 알파벳의 위치 반환
+    
+    
+#for i in abc:
+#    if i in s:
+#        print(s.index(i))
+#    else:
+#        print("-1")
           
