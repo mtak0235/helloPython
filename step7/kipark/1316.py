@@ -13,5 +13,4 @@ for i in range(N):
 				group_checker = 1
 	if(group_checker == 0):
 		result += 1
-	
 print(result)
