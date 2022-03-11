@@ -9,7 +9,7 @@ def check(x):
     for i in range(x):
         if x - i == abs(lst[x] - lst[i]):
             return False
-    return Tru -
+    return True;
 
 def pick(cnt):
     global count
