@@ -1,4 +1,4 @@
-#[2581] step9, 소수 kipark
+#[2581] step9, 소수 kipark 재업
 import sys
 
 era = [False, False, True] + [True] * 10001
