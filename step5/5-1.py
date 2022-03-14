@@ -1,6 +1,4 @@
-from array import array
-
-
+#[10818]step5, 최소,최대
 n = int(input())
-array=list(map(int, input().split()))
-print(min(array), max(array))
+a=list(map(int, input().split()))
+print(min(a), max(a))
