@@ -12,3 +12,4 @@ for i in range(n):
             else:
                 result=max(result, card[i]+card[j]+card[k]) #m보다 크지 않으면 result에 저장됨. 저장된 수 중 가장 큰 수가 result가 됨.
 print(result)
+#런타임에러님
