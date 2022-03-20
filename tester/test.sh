@@ -5,7 +5,6 @@ do
 git stash
 git checkout $user
 git log --since=2.weeks --pretty=format:"%cr : %s" --grep "\[" | sort -k 3
-cat log.txt
 commit_count=$(git log --since=2.weeks --pretty=format:"%cr : %s" --grep "\[" | sort -k 3 | wc -l)
 if [ $commit_count -gt 10 ]; then
 	echo -e "\033[32m commit_count is: $commit_count $user passed over $commit_count\033[0m"
