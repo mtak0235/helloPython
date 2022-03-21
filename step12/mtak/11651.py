@@ -1,5 +1,4 @@
 import sys
-from webbrowser import get
 
 _cnt = int(sys.stdin.readline())
 _get = [list(map(int, sys.stdin.readline().split())) for _ in range(_cnt)]
