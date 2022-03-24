@@ -1,3 +1,3 @@
 # 아스키코드
-n = int(input())
+n = input()
 print(ord(n))
