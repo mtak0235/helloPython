@@ -5,4 +5,4 @@ for _ in range(t):
   str2 = ""
   for s in str1:
     str2 += s * int(r)
-print(str2)
+  print(str2)
