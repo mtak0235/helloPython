@@ -1,4 +1,4 @@
-#[15651] 백트랙킹, n과m (3) kipark	
+#[15652] 백트랙킹, n과m (4) kipark	
 import sys
 
 N, M = map(int, input().split())
@@ -12,6 +12,6 @@ def dfs(start):
 		return
 	for i in range(start, N + 1):
 			number.append(i)
-			dfs(1)
+			dfs(i)
 			number.pop()
 dfs(1)	
