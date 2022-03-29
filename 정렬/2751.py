@@ -1,3 +1,5 @@
+#[2751]정렬, 수 정렬하기2
+
 import sys
 n = int(input())
 l = []

@@ -1,3 +1,4 @@
+#[2884]조건문, 알람시계
 H, M= map(int, input().split())
 if M > 44 :
     print(H, M-45) # 분에서 -45분

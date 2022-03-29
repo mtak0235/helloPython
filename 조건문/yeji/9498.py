@@ -1,3 +1,4 @@
+#[9498]조건문, 시험성적
 score = int(input())
 if 90 <= score <= 100 :
     print ("A")
