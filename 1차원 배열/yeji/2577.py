@@ -1,3 +1,4 @@
+#[2577]1차원 배열, 숫자의 개수
 from unittest import result
 
 a=int(input())
