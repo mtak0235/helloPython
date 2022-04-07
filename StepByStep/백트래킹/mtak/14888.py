@@ -4,8 +4,8 @@ input = sys.stdin.readline
 n = int(input())
 a = list(map(int, input().split()))
 s = list(map(int, input().split()))
-_max = 1000000000 + 1
-_min = -1000000000 - 1
+_min = 1000000000 + 1
+_max = -1000000000 - 1
 
 def dfs(p,m,mu, di, cnt, sum):
     global _max
@@ -21,7 +21,8 @@ def dfs(p,m,mu, di, cnt, sum):
     if mu > 0:
         dfs(p, m, mu - 1, di, cnt + 1, sum * a[cnt])
     if di > 0:
-        dfs(p, m, mu, di - 1, cnt + 1, sum // a[cnt])
+        dfs(p, m, mu, di - 1, cnt + 1, sum // a[cnt] if sum > 0 else (-1) * (abs(sum) // a[cnt]))
+        
 dfs(s[0], s[1], s[2], s[3], 1, a[0])
 print(_max)
 print(_min)
