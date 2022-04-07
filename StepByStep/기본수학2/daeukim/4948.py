@@ -24,7 +24,7 @@ while True:
     break
   cnt = 0
   for i in prime_list:
-    if n<i<n*2:
+    if n<i<=n*2:
       cnt += 1
   print(cnt)
   

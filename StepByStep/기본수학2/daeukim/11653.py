@@ -1,7 +1,4 @@
 # 소인수분해
-from re import I
-
-
 n = int(input())
 i = 2
 while n != 1:
