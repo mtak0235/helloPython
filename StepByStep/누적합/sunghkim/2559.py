@@ -1,4 +1,5 @@
 import sys
+
 N, K = map(int,sys.stdin.readline().split())
 num = list(map(int,sys.stdin.readline().split()))
 DP = [0] * N
