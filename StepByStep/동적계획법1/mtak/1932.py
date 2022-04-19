@@ -1,19 +1,15 @@
-n = int(input())
-
-t_list = []
-
-for _ in range(n):
-    t_list.append(list(map(int, input().split())))
-
-
-for i in range(1,n):
+import sys
+input = sys.stdin.readline
+_size = int(input())
+_rectangle = [list(map(int, input().split())) for _ in range(_size)]
+for i in range(1,_size):
     for j in range(i+1):
         if j == 0:
-            t_list[i][j] = t_list[i][j] + t_list[i-1][j]
+            _rectangle[i][j] = _rectangle[i][j] + _rectangle[i-1][j]
         elif i == j:
-            t_list[i][j] = t_list[i][j] + t_list[i-1][j-1]
+            _rectangle[i][j] = _rectangle[i][j] + _rectangle[i-1][j-1]
         else:
-            t_list[i][j] = max(t_list[i][j]+t_list[i-1][j],
-                               t_list[i][j]+t_list[i-1][j-1])
+            _rectangle[i][j] = max(_rectangle[i][j]+_rectangle[i-1][j],
+                               _rectangle[i][j]+_rectangle[i-1][j-1])
 
-print(max(t_list[n-1]))
+print(max(_rectangle[_size-1]))
