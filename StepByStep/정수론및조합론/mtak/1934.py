@@ -5,7 +5,6 @@ for i in range(num):
     while a!=0:
         b = b%a
         a,b = b,a   
-        # print(a,b)
     gcd = b
     lcm = A * B //b
     print(lcm)
