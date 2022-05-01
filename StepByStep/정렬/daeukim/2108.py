@@ -1,5 +1,7 @@
 # 통계학
+import sys
 from collections import Counter
+input = sys.stdin.readline
 
 n = int(input())
 num_list = []
