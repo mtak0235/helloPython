@@ -2,12 +2,8 @@ num = int(input())
 for i in range(num):
     a,b = map(int,input().split())
     A,B = a,b
-    while a!=0:
-        b = b%a
-        print(a, b)
-        a,b = b,a   
-    gcd = b
-    print(gcd)
-    lcm = A * B //b
+    while b!=0:
+        a,b = b,a%b
+    gcd = a
+    lcm = A * B //gcd
     print(lcm)
-    
