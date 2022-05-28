@@ -2,7 +2,6 @@
 # 우선 순위 큐
 # 두개의 힙, 중간 값 찾기
 
-from operator import le
 import sys, heapq
 
 input = sys.stdin.readline
@@ -16,7 +15,7 @@ for i in range(N):
     x = int(input())
     heapq.heappush(leftH, -x) if len(leftH) == len(rightH) else heapq.heappush(rightH, x)
 
-    # 중간 값이 중간 값 초과의 수보다 크다면 교환하여 변경
+    # 중간 값이 중간 값 초과의 수보다 크다면 교환
     if rightH and -leftH[0] > rightH[0]:
         m = heapq.heappop(rightH)
         heapq.heappush(rightH, -heapq.heappop(leftH))
