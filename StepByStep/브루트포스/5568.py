@@ -1,5 +1,6 @@
 # 카드 놓기
 # 브루트포스
+# 순열
 
 from itertools import permutations
 import sys
