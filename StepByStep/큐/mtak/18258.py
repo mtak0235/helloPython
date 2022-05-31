@@ -1,7 +1,8 @@
 import sys
+from collections import deque
 input = sys.stdin.readline
 n_cmd = int(input())
-target = list()
+target = deque()
 
 
 def push(s):
@@ -12,8 +13,7 @@ def pop():
     if len(target) == 0:
         print(-1)
     else:
-        print(target.pop())
-
+        print(target.popleft())
 
 def size():
 		print(len(target))
@@ -37,7 +37,7 @@ def back():
 	if (len(target) == 0):
 		print(-1)
 	else:
-		print(target[len(target)-1])
+		print(target[-1])
 
 cmd = {
 	'push' : push,
