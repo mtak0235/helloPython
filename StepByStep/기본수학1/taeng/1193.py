@@ -4,6 +4,21 @@
 # 2022-06-08 09:22 
 # 시간초과!!!
 
+def pattern_prt(X: int, _max: int, _add: int):
+	n = 1
+	_x = 0
+	for x in range(1, X):
+		_x = x
+		print(x, n)
+		if n == 1:
+			if _add == -1:
+				_max += 2
+				_add = 1
+				continue
+		elif n == _max:
+			_add = -1
+		n += _add
+	print(_x + 1, n)
 
 def pattern(X: int, _max: int, _add: int) -> int:
 	n = 1
@@ -20,5 +35,7 @@ def pattern(X: int, _max: int, _add: int) -> int:
 
 
 X = int(input())
-a, b = pattern(X, 1, -1), pattern(X, 2, 1)
-print(f"{a}/{b}")
+pattern_prt(X, 1, -1)
+#pattern_prt(X, 2, 1)
+#a, b = pattern(X, 1, -1), pattern(X, 2, 1)
+#print(f"{a}/{b}")
