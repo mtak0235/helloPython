@@ -1,0 +1,5 @@
+#
+#
+#
+
+print(ord(input()))
