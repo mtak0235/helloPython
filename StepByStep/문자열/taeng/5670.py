@@ -21,7 +21,7 @@ class Trie:
     def count(self, _word: str) -> int:
         cur: Trie = self
         cnt: int = 0
-        pre_point: int = 0  # 직전 노드의 point 값
+        pre_point: int = 0
         for _ch in _word:
             cur = cur.next[_ch]
             if cur.point != pre_point:
