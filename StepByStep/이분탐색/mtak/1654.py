@@ -3,7 +3,7 @@ input = sys.stdin.readline
 k, n = map(int, input().split())
 a =[int(input()) for _ in range(k)]
 
-low = 1
+low = 0
 high = max(a)
 ret = 0
 while low <= high:
