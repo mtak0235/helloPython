@@ -1,16 +1,3 @@
-2
--5 1 12 1
-7
-1 1 8
--3 -1 1
-2 2 2
-5 5 1
--4 5 1
-12 1 1
-12 1 2
--5 1 5 1
-1
-0 0 2
 import sys
 import math
 input = sys.stdin.readline
