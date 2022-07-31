@@ -1,0 +1,1 @@
+print(*sorted(map(int, list(open(0))[1:])), sep="\n")
